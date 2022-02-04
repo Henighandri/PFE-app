@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fond1"
+    android:gravity="center_horizontal"
+    tools:context=".Detail_plante">
+
+
+    <Button
+        android:id="@+id/b_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:text="ghraphique"
+        />
+
+            <ImageView
+
+                android:id="@+id/img"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+
+                android:background="@drawable/back1"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="plante"
+                android:textColor="#fff"
+
+                android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ly_temp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temperature"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+
+                android:textColor="#fff"
+                android:textSize="25dp"
+
+                />
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_temp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/progress_tem"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_temp"
+            android:progress="100"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ly_hum">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="humidité"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+
+                android:textColor="#fff"
+                android:textSize="25dp"
+
+                />
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_hum"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/progress_hum"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_hum"
+            android:progress="10"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ly_eau">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="consomation"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/q_eau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                
+                android:textColor="#fff"
+                android:textSize="25dp"
+
+                />
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/consomation"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/progress_eau"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_hum"
+            android:progress="60"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="agcvjjjkk"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+
+
+
+</LinearLayout>
+

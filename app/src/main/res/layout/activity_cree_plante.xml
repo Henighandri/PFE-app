@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/fond1"
+
+    android:orientation="vertical"
+    tools:context=".creer_plante">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        android:src="@drawable/saisir" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="50dp"
+         android:gravity="center">
+
+<RelativeLayout
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="plante"
+        android:textSize="30dp"
+
+        android:textColor="#fff"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_plante" />
+
+</RelativeLayout>
+
+   <EditText
+       android:id="@+id/nom"
+       android:layout_width="220dp"
+       android:layout_height="wrap_content"
+       android:textSize="25dp"
+       android:textColor="#000"
+       android:background="#fff"
+       />
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temp"
+                android:textSize="30dp"
+
+                android:textColor="#fff"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_temp"
+               android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/tempe"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:background="#fff"
+        android:hint="°C "/>
+
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="humidite"
+                android:textSize="30dp"
+
+                android:textColor="#fff"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_hum"
+               android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    <EditText
+        android:id="@+id/hum"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:hint="% "
+        android:textColor="#000"
+        android:background="#fff"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/valide"
+        android:text="valider"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@drawable/button"/>
+    </LinearLayout>
+</LinearLayout>
